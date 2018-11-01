@@ -34,6 +34,12 @@ h4 {
     font-size: 18px;
 }
 
+button, input, .btn, a.btn {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #ffff;
+}
+
 .btn {
     font-weight: bold;
 }
@@ -42,6 +48,11 @@ h4 {
     background-color: #dd5638;
     border-collapse: #d95131;
 }
+
+img {
+    max-width: 100%;
+}
+
 
 /* HERO */
 
@@ -109,3 +120,24 @@ h4 {
     display: block;
 }
 
+/* LAYOUT  */
+
+#optin {
+    background: #3e4249;
+    padding: 20px 0;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 1.2em;
+}
+
+#optin p {
+    margin: 7px 0 0 0;
+}
+
+#myModal {
+    background: #fff;
+    width: 50%;
+    height: 50%;
+    margin: 50px auto;
+}
