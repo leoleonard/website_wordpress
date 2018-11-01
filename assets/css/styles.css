@@ -178,6 +178,10 @@ section h3 {
     color: #fff;
 }
 
+#instructor {
+    background: #fff url("../img/brad-elvis.png") 90% -10px no-repeat;
+}
+
 
 /* custom icon sprites  */
 
