@@ -186,6 +186,7 @@ section h3 {
 
 #primary {
     padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .feature-image {
@@ -194,19 +195,20 @@ section h3 {
 }
 
 .feature-image-default {
-    background: url("../img/stuff-feature.jpg") no-repeat;
+	background: url('../img/stuff-feature.jpg') no-repeat;
+	background-size: cover;
 }
 
 .feature-image-default-alt {
-    background: url("../img/hipster-stuff.jpg") no-repeat;
-    background-size: cover;
+	background: url('../img/hipster-stuff.jpg') no-repeat;
+	background-size: cover;
 }
 
 .feature-image h1 {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
 }
 
 
@@ -325,6 +327,14 @@ button[type="submit"] {
 	border: none;
 	border-radius: 6px;
 }
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+	outline: none;
+	border: none;
+	background: #aaa;
+}
+
 
 /* custom icon sprites  */
 
@@ -502,6 +512,18 @@ footer li.signup-link a:hover {
 .widget ul li:hover {
     position: relative;
     left: 1px;
+}
+
+/* === RESOURCES === */
+
+.resource {
+	width: 31.33333333%;
+	float: left;
+	margin: 0 3% 40px 0;
+}
+
+.resource:nth-child(3n) {
+	margin-right: 0;
 }
 
 
