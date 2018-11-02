@@ -1,5 +1,4 @@
-/* green: #79b044;
- */
+
 /* 
  GENERAL
   */
@@ -53,7 +52,22 @@ img {
     max-width: 100%;
 }
 
+blockquote {
+    padding: 0;
+    border: none;
+    font-style: italic;
+    text-align: left;
+}
 
+blockquote cite {
+    display: block;
+    color: #777;
+    margin: 15px 0 0 0;
+}
+
+blockquote:before {
+    display: none;
+}
 
 /* HERO */
 
@@ -251,4 +265,17 @@ i.ci {
 }
 .badgage.social.gplus:hover {
     background: #db4b39;
+}
+
+#kudos {
+    text-align: cetner;
+}
+
+.testimonial {
+    margin-bottom: 60px;
+}
+
+.testimonial img {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
 }
