@@ -184,6 +184,31 @@ section h3 {
     margin: 30px 0 10px;
 }
 
+#primary {
+    padding-top: 30px;
+}
+
+.feature-image {
+    display: table;
+    width: 100%;
+}
+
+.feature-image-default {
+    background: url("../img/stuff-feature.jpg") no-repeat;
+}
+
+.feature-image-default-alt {
+    background: url("../img/hipster-stuff.jpg") no-repeat;
+    background-size: cover;
+}
+
+.feature-image h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+
 
 #optin {
     background: #3e4249;
@@ -258,6 +283,49 @@ section h3 {
     font-weight: normal;
 }
 
+/* forms */
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[typu="text"],
+input[typu="email"],
+input[typu="password"],
+input[typu="search"],
+textarea {
+    color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	display: block;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px 12px;
+}
+
+input[type="submit"],
+button[type="submit"] {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: none;
+	border-radius: 6px;
+}
+
 /* custom icon sprites  */
 
 i.ci {
@@ -279,7 +347,7 @@ i.ci {
     font-size: 24px;
     height: 40px;
     height: 40px;
-    text-align: cetner;
+    text-align: center;
     line-height: 42px;
     margin: 0 5px 20px 0px;
     padding: 0;
@@ -289,14 +357,16 @@ i.ci {
     color: #fff;
 }
 
-.badgage.social.twitter:hover {
-    background: #55acee;
+.badge.social.twitter:hover {
+	background: #55acee;
 }
-.badgage.social.facebook:hover {
-    background: #3b5998;
+
+.badge.social.facebook:hover {
+	background: #3b5998;
 }
-.badgage.social.gplus:hover {
-    background: #db4b39;
+
+.badge.social.gplus:hover {
+	background: #db4b39;
 }
 
 #kudos {
@@ -358,6 +428,116 @@ footer li.signup-link a {
 footer li.signup-link a:hover {
     font-weight: bold;
 } 
+
+/* BLOG STYLES  */
+
+.post .widget  {
+	position: relative;
+	border: solid 1px #ddd;
+	background: white;
+	margin: 0 0 40px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.post header,
+.post .post-excerpt,
+.post .post-body {
+	padding: 20px;
+}
+
+.post header h1, 
+.post header h3 {
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom: solid 1px #ddd;
+}
+
+.post header h1 {
+    font-size: 24px;
+}
+
+/* for wordpress!!! */
+.post-image {
+    height: auto;
+}
+
+.post-details {
+    font-size: 12px;
+    width: 90%;
+}
+
+.post-details i.fa {
+    padding-left: 10px;
+}
+
+.post-detials i.fa:first-child {
+    padding: 0;
+}
+
+/* widgets */
+
+.widget {
+    padding: 20px;
+}
+
+.widget h4 {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: solid 1px solid #ddd;
+}
+
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget ul li {
+    margin: 0 0 5px;
+}
+
+.widget ul li:hover {
+    position: relative;
+    left: 1px;
+}
+
+
+/* comments  */
+
+.post-comments-badge {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    border: none;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: #79b044;
+    text-align: center;
+    display: table;
+}
+
+.post-comments-badge a {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.post-comments-badge i.fa {
+    display: block;
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+.post-comments-badge:hover {
+    background: #8bc653;
+}
 
 /* media queries */
 
